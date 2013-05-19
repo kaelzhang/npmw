@@ -16,8 +16,8 @@ npm install npmw --save
 
 ### Usage
 
-npmw(options).\<command\>(arguments);
-new npmw(options).\<command\>(arguments);
+	npmw(options).<command>(arguments);
+	new npmw(options).<command>(arguments);
 
 ### Options
 
@@ -63,6 +63,4 @@ npm.exists('npmw', '~0.0.0', function(error, data){
 		console.log('Module npmw@~0.0.0 exists and the latest version is "' + data.latest + '"');
 	}
 });
-
-
 ```
