@@ -1,6 +1,6 @@
 {
   "name": "npmw",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "npm wrapper for programming, useful for self-built npm servers",
   "main": "lib/npmw.js",
   "scripts": {
