@@ -1,0 +1,22 @@
+{
+  "name": "npmw",
+  "version": "0.0.0",
+  "description": "npm wrapper for programming, useful for self-built npm servers",
+  "main": "lib/npmw.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kaelzhang/npmw.git"
+  },
+  "keywords": [
+    "npm",
+    "program"
+  ],
+  "author": "kael",
+  "license": "BSD",
+  "dependencies": {
+    "semver": "~1.1.4"
+  }
+}
