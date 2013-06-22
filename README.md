@@ -5,28 +5,29 @@
 ## Getting Started
 You may install this module with this command:
 
-```shell
+```bash
 npm install npmw --save
 ```
 
-
 ### Overview
-`npm` has no support for multi registeries yet. `npmw` is a design wrapper for programming, including some frequent utility methods
+`npm` has no support for multi registries yet. `npmw` is a design wrapper for programming, including some frequent utility methods
 
 
 ### Usage
 
-	npmw(options).<command>(arguments);
-	new npmw(options).<command>(arguments);
+```js
+npmw(options).<command>(arguments);
+new npmw(options).<command>(arguments);
+```
 
 ### Options
 
-#### options.registery
+#### options.registry
 Type: `string`
 
-Default: `'http://registery.npmjs.org'`
+Default: `'http://registry.npmjs.org'`
 
-NPM registery server. Useful if you use your private npm server.
+NPM registry server. Useful if you use your private npm server.
 
 Notice that, `npm` doesn't support connecting multiple servers simultaneously.
 
@@ -55,7 +56,7 @@ data.data: `Object` original server data
 ```js
 var npmw = require('npmw');
 var npm = npmw({
-    registery: 'http://registery.yourserver.local'
+    registry: 'http://registry.yourserver.local'
 });
 
 npm.exists('npmw', '~0.0.0', function(error, data){
